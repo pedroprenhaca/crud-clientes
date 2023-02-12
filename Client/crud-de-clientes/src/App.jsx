@@ -92,7 +92,6 @@ export function App() {
     } else {
       axios.post('http://localhost:8080/client', objClient)
         .then((response) => {
-          console.log('cadastro', response.status)
           setClients([...objClient, response])
           if (response.status === 201) {
             toastr.options = {

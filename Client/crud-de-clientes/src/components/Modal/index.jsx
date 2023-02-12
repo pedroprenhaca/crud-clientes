@@ -62,7 +62,7 @@ function handleStatesAndCitiesChange(event) {
   function dataModal(event){
     fillInFilds.client.data[event.target.name] = event.target.value
   }
-  
+
   return (
     <>
       <Modal
@@ -90,7 +90,7 @@ function handleStatesAndCitiesChange(event) {
 
                     <div className={styles.dropcity}>
                         <select id="city" name="city" defaultValue={fillInFilds.client.data.city} key={fillInFilds.client.data.city} onChange={dataModal}>
-                            <option value="">Selecione uma Cidade</option>
+                            <option  value="">{fillInFilds.client.data.city}</option>
                             {cities.map((item) => (
                                 <option key={item.id} >{item.nome}</option> 
                                 ))}

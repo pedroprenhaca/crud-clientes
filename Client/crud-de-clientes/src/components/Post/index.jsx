@@ -4,6 +4,8 @@ import { getCityForState, getStates } from "../../utils/ibge";
 import styles from './index.module.css'
 import 'toastr/build/toastr.min.css'
 import { useNavigate } from 'react-router-dom';
+import toastr from 'toastr'
+import 'toastr/build/toastr.min.css'
 
 export function Post() {
     const { dataForm, registerClient,objClient } = useContext(UserContext)
@@ -42,7 +44,8 @@ export function Post() {
             && (objClient.state != "") 
             && (objClient.city != "") 
             && (TestaCPF(objClient.cpf)) ) {
-            window.location.reload(true, navigateTo('/'));
+
+            window.location.reload(true, navigateTo('/') );
         }
     }
 
