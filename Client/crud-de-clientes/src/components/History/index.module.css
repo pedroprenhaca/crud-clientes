@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    flex-wrap:wrap;
+
+}
+
+.container h1{
+    border:1px solid;
+    color:var(--purple);
+    margin-top:3.125rem;
+    margin-bottom:2.187rem;
+}
+.container{
+    overflow-x:auto;
+}
+
+.table th{
+    background-color:var(--gray-500);
+    padding:1rem;
+    text-align:left;
+    color:var(--gray-100);
+    font-size:0.875rem;
+    line-height:1.6;
+    
+}
+
+.table th:first-child{
+    border-top-left-radius:8px;
+    padding-left:1.5rem;
+}
+.table th:last-child{
+    border-top-right-radius:8px;
+    padding-right:1.5rem;
+}
+.table th:last-child{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table td{
+    justify-content:center;
+    background-color:var(--gray-500);
+    border-top:4px solid var(--gray-600);
+    padding:1rem;
+    font-size:0.875rem;
+    line-height:1.6;
+    text-align:center;
+    color:var(--gray-100);
+    position:relative;
+
+}
+
+.tablebtn td button{
+    background-color:transparent;
+    border:none;
+    color:var(--purple);
+    cursor:pointer;
+    
+}
+
+.tablebtn button{
+    justify-content:center;
+    background-color:var(--gray-500);
+    border-top:4px solid var(--gray-600);
+    padding:1rem;
+    font-size:0.875rem;
+    line-height:1.6;
+    text-align:center;
+    color:var(--gray-100);
+    position:relative;
+}
+
+.empty{
+    margin-top: 4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:var(--gray-300);
+    gap:1rem;
+    text-align:center;
+}
+
+.empty svg{
+    opacity:0.3;
+}
+
+.empty p{
+    font-weight:700;
+}
+
+
+
+@media (max-width: 800px){
+    .table td{
+        display:block;
+        text-align:right;
+        width:25rem;
+    }
+    .table td:before{
+        content: attr(data-title);
+        position: absolute;
+        left:1rem;
+        display:block
+    }
+    .table th{
+        display:none;
+    }
+    .table th:last-child{
+        display:none;
+    }
+    .table tr{
+        display:block;
+        margin-bottom:15px
+    }
+    .tablebtn td button:first-child,
+    .tablebtn td button:last-child{
+        align-items:center;
+        width:100%
+    }
+}
