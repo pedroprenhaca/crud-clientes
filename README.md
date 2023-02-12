@@ -8,3 +8,17 @@
 
 ## Alterar
 <img src="https://user-images.githubusercontent.com/62861100/218340555-1d0b9434-a727-4709-a428-d4b0a273e4df.png" align="center" />
+
+### 🛠️ Nesse projeto foi utilizado
+
+##Back-end
+* Java
+* Spring-boot
+* Mysql
+
+##Front-end
+* Vite
+* Css-modules
+* Api do ibge 
+* chakra ui
+* react-icons
